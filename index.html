@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloning Exercise</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./dist/main.css">
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -18,7 +19,9 @@
         </div>
         <nav class="items-center justify-between hidden gap-8 font-semibold md:flex text-gray-650">
             <a href="#" class="px-4 py-2 text-center border border-gray-300 rounded-3xl">
-                <i class="fa fa-download"></i>
+                <span class="text-blue-500">
+                    <i class="fa fa-download"></i>
+                </span>
                 <span>Download the app</span>
             </a>
             <a href="#">travel planner</a>
@@ -30,9 +33,42 @@
     </header>  
 
     <main class="">
-        <div>
-            <h1>Everything is fine, you book with FeWo-direkt</h1>
+        <!-- HERO SECTION -->
+        <div class="relative">
+          <img src="./assets/VRBO_DESERT_BRAND_vrbo_hero.jpeg" alt="" class="object-cover w-full h-full brightness-50">
+          
+          <div class="absolute flex flex-col transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            <h1 class="text-5xl font-medium text-white leading-[56px]">Everything is fine, you book with FeWo-direkt</h1>
+
+
+          <!-- Search Bar Container -->
+          <div class="flex flex-col items-center w-full max-w-5xl p-4 mx-auto space-y-4 bg-white shadow-md rounded-xl md:flex-row md:space-y-0 md:space-x-4">
+            <!-- Location Input -->
+            <div class="flex items-center w-full px-4 py-2 border border-gray-300 rounded-lg md:w-auto">
+                <i class="mr-2 text-blue-500 fa fa-map-marker-alt"></i>
+                <input type="text" placeholder="Where should we go?" class="flex-grow text-gray-700 placeholder-gray-500 bg-transparent outline-none">
+            </div>
+
+            <!-- Date Input -->
+            <div class="flex items-center w-full px-4 py-2 border border-gray-300 rounded-lg md:w-auto">
+                <i class="mr-2 text-blue-500 fa fa-calendar-alt"></i>
+                <input type="text" placeholder="Nov. 16 - Nov. 30" class="flex-grow text-gray-700 placeholder-gray-500 bg-transparent outline-none">
+            </div>
+
+            <!-- Guests Input -->
+            <div class="flex items-center w-full px-4 py-2 border border-gray-300 rounded-lg md:w-auto">
+                <i class="mr-2 text-blue-500 fa fa-user"></i>
+                <input type="text" placeholder="2 travelers" class="flex-grow text-gray-700 placeholder-gray-500 bg-transparent outline-none">
+            </div>
+
+            <!-- Submit Button -->
+            <button class="px-6 py-3 font-semibold text-white transition duration-300 bg-blue-800 rounded-full hover:bg-blue-900">
+                Seek
+            </button>
+          </div>
         </div>
+      </div>
+    
     </main>
 </body>
 </html>
