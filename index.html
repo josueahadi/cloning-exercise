@@ -1,74 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cloning Exercise</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./dist/main.css">
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous"> -->
-</head>
-<body>
-    <header class="flex items-center justify-between px-40 py-6 text-sm leading-tight">
-        <div>
-            <a href="#" class="flex items-center">
-                <img src="/assets/logo.svg" alt="logo" class="h-8">
-            </a>
-        </div>
-        <nav class="items-center justify-between hidden gap-8 font-semibold md:flex text-gray-650">
-            <a href="#" class="px-4 py-2 text-center border border-gray-300 rounded-3xl">
-                <span class="text-blue-500">
-                    <i class="fa fa-download"></i>
-                </span>
-                <span>Download the app</span>
-            </a>
-            <a href="#">travel planner</a>
-            <a href="#">register accommodation</a>
-            <a href="#">Help</a>
-            <a href="#">My Travels</a>
-            <a href="#">Register</a>
-        </nav>
-    </header>  
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./dist/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
 
-    <main class="">
-        <!-- HERO SECTION -->
-        <div class="relative">
-          <img src="./assets/VRBO_DESERT_BRAND_vrbo_hero.jpeg" alt="" class="object-cover w-full h-full brightness-50">
-          
-          <div class="absolute flex flex-col transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-            <h1 class="text-5xl font-medium text-white leading-[56px]">Everything is fine, you book with FeWo-direkt</h1>
+  <body>
+    <header
+      class="flex items-center justify-between px-40 py-6 text-sm leading-tight"
+    >
+      <div>
+        <a href="#" class="flex items-center">
+          <img src="/assets/logo.svg" alt="logo" class="h-8" />
+        </a>
+      </div>
+      <nav
+        class="items-center justify-between hidden gap-8 font-semibold md:flex text-gray-650"
+      >
+        <a
+          href="#"
+          class="flex flex-row items-center justify-center gap-2 px-4 py-2 border border-gray-300 rounded-3xl"
+        >
+          <span class="text-blue-500">
+            <i class="fa fa-download"></i>
+          </span>
+          <span>Download the app</span>
+        </a>
+        <a href="#">travel planner</a>
+        <a href="#">register accommodation</a>
+        <a href="#">Help</a>
+        <a href="#">My Travels</a>
+        <a href="#">Register</a>
+      </nav>
+    </header>
 
+    <main>
+      <!-- HERO SECTION -->
+      <section class="relative">
+        <img
+          src="./assets/VRBO_DESERT_BRAND_vrbo_hero.jpeg"
+          alt=""
+          class="object-cover w-full h-full brightness-50"
+        />
 
-          <!-- Search Bar Container -->
-          <div class="flex flex-col items-center w-full max-w-5xl p-4 mx-auto space-y-4 bg-white shadow-md rounded-xl md:flex-row md:space-y-0 md:space-x-4">
-            <!-- Location Input -->
-            <div class="flex items-center w-full px-4 py-2 border border-gray-300 rounded-lg md:w-auto">
-                <i class="mr-2 text-blue-500 fa fa-map-marker-alt"></i>
-                <input type="text" placeholder="Where should we go?" class="flex-grow text-gray-700 placeholder-gray-500 bg-transparent outline-none">
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center space-y-6 text-white px-44"
+        >
+          <h1 class="text-4xl font-semibold md:text-5xl lg:text-6xl">
+            Everything is fine, you book with FeWo-direkt
+          </h1>
+
+          <div
+            class="flex flex-col items-center justify-between w-full p-4 mx-auto space-y-4 bg-white shadow-md rounded-xl md:flex-row md:space-y-0"
+          >
+            <div
+              class="flex items-center px-4 py-3 border border-gray-700 rounded-lg w-[30%] text-[#191e3b]"
+            >
+              <i class="mr-2 fa fa-map-marker-alt"></i>
+              <input
+                type="text"
+                placeholder="Where should we go?"
+                class="flex-grow placeholder-[#191e3b] bg-transparent outline-none"
+              />
             </div>
 
-            <!-- Date Input -->
-            <div class="flex items-center w-full px-4 py-2 border border-gray-300 rounded-lg md:w-auto">
-                <i class="mr-2 text-blue-500 fa fa-calendar-alt"></i>
-                <input type="text" placeholder="Nov. 16 - Nov. 30" class="flex-grow text-gray-700 placeholder-gray-500 bg-transparent outline-none">
+            <div
+              class="flex items-center px-4 py-3 border border-gray-700 rounded-lg w-[30%] text-[#191e3b]"
+            >
+              <i class="mr-2 fa fa-calendar-alt"></i>
+              <input
+                type="text"
+                placeholder="Nov. 16 - Nov. 30"
+                class="flex-grow placeholder-[#191e3b] bg-transparent outline-none"
+              />
             </div>
 
-            <!-- Guests Input -->
-            <div class="flex items-center w-full px-4 py-2 border border-gray-300 rounded-lg md:w-auto">
-                <i class="mr-2 text-blue-500 fa fa-user"></i>
-                <input type="text" placeholder="2 travelers" class="flex-grow text-gray-700 placeholder-gray-500 bg-transparent outline-none">
+            <div
+              class="flex items-center px-4 py-3 border border-gray-700 rounded-lg w-[30%] text-[#191e3b]"
+            >
+              <i class="mr-2 fa-regular fa-user"></i>
+              <input
+                type="text"
+                placeholder="2 travelers"
+                class="flex-grow placeholder-[#191e3b] bg-transparent outline-none"
+              />
             </div>
 
-            <!-- Submit Button -->
-            <button class="px-6 py-3 font-semibold text-white transition duration-300 bg-blue-800 rounded-full hover:bg-blue-900">
-                Seek
+            <button
+              class="px-4 py-3 font-bold text-white bg-[#191e3b] rounded-full"
+            >
+              Seek
             </button>
           </div>
         </div>
-      </div>
-    
+      </section>
+
+      <!-- Popular Destinations -->
+      <section class="py-20 text-2xl px-44 text-[#191e3b] font-semibold">
+        <h1>Popular travel destinations</h1>
+        <div class="flex flex-row w-full gap-4 py-10 overflow-x-auto flex-nowrap overscroll-x-scroll">
+
+          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72">
+            <img src="./assets/destinations/kigali.jpg" alt="" class="rounded-t-2xl">
+            <p class="p-3 text-lg font-semibold">Kigali</p>
+          </div>
+        
+          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72">
+            <img src="./assets/destinations/paris.jpg" alt="" class="rounded-t-2xl">
+            <p class="p-3 text-lg font-semibold">Paris</p>
+          </div>
+
+          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72">
+            <img src="./assets/destinations/nairobi.jpg" alt="" class="rounded-t-2xl">
+            <p class="p-3 text-lg font-semibold">Nairobi</p>
+          </div>
+
+          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72">
+            <img src="./assets/destinations/Dubai.jpg" alt="" class="rounded-t-2xl">
+            <p class="p-3 text-lg font-semibold">Dubai</p>
+          </div>
+
+          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72">
+            <img src="./assets/destinations/gisenyi.jpg" alt="" class="rounded-t-2xl">
+            <p class="p-3 text-lg font-semibold">Gisenyi</p>
+          </div>
+
+          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72">
+            <img src="./assets/destinations/kampala.jpg" alt="" class="rounded-t-2xl">
+            <p class="p-3 text-lg font-semibold">Kampala</p>
+          </div>
+
+          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72">
+            <img src="./assets/destinations/brussels.jpg" alt="" class="rounded-t-2xl">
+            <p class="p-3 text-lg font-semibold">Brussels</p>
+          </div>
+
+          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72">
+            <img src="./assets/destinations/daressalaam.jpg" alt="" class="rounded-t-2xl">
+            <p class="p-3 text-lg font-semibold">Dar es Salaam</p>
+          </div>
+
+          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72">
+            <img src="./assets/destinations/yaounde.jpg" alt="" class="rounded-t-2xl">
+            <p class="p-3 text-lg font-semibold">Yaounde</p>
+          </div>
+
+          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72">
+            <img src="./assets/destinations/douala.jpg" alt="" class="rounded-t-2xl">
+            <p class="p-3 text-lg font-semibold">Douala</p>
+          </div>
+
+        </div>
+      </section>
+
     </main>
-</body>
+  </body>
 </html>
