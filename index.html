@@ -14,14 +14,23 @@
 
   <body>
     <header
-      class="flex items-center justify-between px-40 py-6 text-sm leading-tight"
+      class="flex items-center justify-between px-6 py-4 text-sm leading-tight lg:px-40 lg:py-6"
     >
       <div>
         <a href="#" class="flex items-center">
           <img src="/assets/logo.svg" alt="logo" class="h-8" />
         </a>
       </div>
-      <nav
+
+        <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="menuToggle" class="text-gray-700">
+          <i class="text-2xl fas fa-bars"></i>
+        </button>
+      </div>
+      
+      <!-- Navigation Links -->
+      <nav id="navMenu"
         class="items-center justify-between hidden gap-8 font-semibold md:flex text-gray-650"
       >
         <a
@@ -43,7 +52,7 @@
 
     <main>
       <!-- HERO SECTION -->
-      <section class="relative">
+      <section class="relative h-[70vh] md:h-[80vh]">
         <img
           src="./assets/VRBO_DESERT_BRAND_vrbo_hero.jpeg"
           alt=""
@@ -51,17 +60,17 @@
         />
 
         <div
-          class="absolute inset-0 flex flex-col items-center justify-center space-y-6 text-white px-44"
+          class="absolute inset-0 flex flex-col items-center justify-center px-6 space-y-6 text-white md:px-6 lg:px-44"
         >
           <h1 class="text-4xl font-semibold md:text-5xl lg:text-6xl">
             Everything is fine, you book with FeWo-direkt
           </h1>
 
           <div
-            class="flex flex-col items-center justify-between w-full p-4 mx-auto space-y-4 bg-white shadow-md rounded-xl md:flex-row md:space-y-0"
+            class="flex flex-col items-center justify-between w-full p-4 mx-auto space-y-4 bg-white shadow-md rounded-xl lg:flex-row lg:space-y-0"
           >
             <div
-              class="flex items-center px-4 py-3 border border-gray-700 rounded-lg w-[30%] text-[#191e3b]"
+              class="flex items-center px-4 py-3 border border-gray-700 rounded-lg w-full md:w-full lg:w-[30%] text-[#191e3b]"
             >
               <i class="mr-2 fa fa-map-marker-alt"></i>
               <input
@@ -72,7 +81,7 @@
             </div>
 
             <div
-              class="flex items-center px-4 py-3 border border-gray-700 rounded-lg w-[30%] text-[#191e3b]"
+              class="flex items-center px-4 py-3 border border-gray-700 rounded-lg w-full md:w-full lg:w-[30%] text-[#191e3b]"
             >
               <i class="mr-2 fa fa-calendar-alt"></i>
               <input
@@ -83,7 +92,7 @@
             </div>
 
             <div
-              class="flex items-center px-4 py-3 border border-gray-700 rounded-lg w-[30%] text-[#191e3b]"
+              class="flex items-center px-4 py-3 border border-gray-700 rounded-lg w-full md:w-full lg:w-[30%] text-[#191e3b]"
             >
               <i class="mr-2 fa-regular fa-user"></i>
               <input
@@ -94,7 +103,7 @@
             </div>
 
             <button
-              class="px-4 py-3 font-bold text-white bg-[#191e3b] rounded-full"
+              class="px-4 py-3 font-bold text-white bg-[#191e3b] rounded-full w-full md:w-full lg:w-auto"
             >
               Seek
             </button>
@@ -103,100 +112,221 @@
       </section>
 
       <!-- Popular Destinations -->
-      <section class="pt-20 px-44 ">
-        <h1 class="text-3xl text-[#191e3b] font-semibold">Popular travel destinations</h1>
-        <div class="flex flex-row w-full gap-4 py-4 overflow-x-auto flex-nowrap overscroll-x-scroll text-[16px] font-semibold no-scrollbar">
-
-          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72 ">
-            <img src="./assets/destinations/kigali.jpg" alt="" class="rounded-t-2xl">
+      <section class="px-6 pt-20 md:px-6 lg:px-44">
+        <h1 class="text-3xl text-[#191e3b] font-semibold">
+          Popular travel destinations
+        </h1>
+        <div
+          class="flex flex-row w-full gap-4 py-4 overflow-x-auto flex-nowrap overscroll-x-scroll text-[16px] font-semibold no-scrollbar"
+        >
+          <div
+            class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72"
+          >
+            <img
+              src="./assets/destinations/kigali.jpg"
+              alt=""
+              class="rounded-t-2xl"
+            />
             <p class="p-3">Kigali</p>
           </div>
-        
-          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72">
-            <img src="./assets/destinations/paris.jpg" alt="" class="rounded-t-2xl">
+
+          <div
+            class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72"
+          >
+            <img
+              src="./assets/destinations/paris.jpg"
+              alt=""
+              class="rounded-t-2xl"
+            />
             <p class="p-3">Paris</p>
           </div>
 
-          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72">
-            <img src="./assets/destinations/nairobi.jpg" alt="" class="rounded-t-2xl">
+          <div
+            class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72"
+          >
+            <img
+              src="./assets/destinations/nairobi.jpg"
+              alt=""
+              class="rounded-t-2xl"
+            />
             <p class="p-3">Nairobi</p>
           </div>
 
-          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72">
-            <img src="./assets/destinations/Dubai.jpg" alt="" class="rounded-t-2xl">
+          <div
+            class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72"
+          >
+            <img
+              src="./assets/destinations/Dubai.jpg"
+              alt=""
+              class="rounded-t-2xl"
+            />
             <p class="p-3">Dubai</p>
           </div>
 
-          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72">
-            <img src="./assets/destinations/gisenyi.jpg" alt="" class="rounded-t-2xl">
+          <div
+            class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72"
+          >
+            <img
+              src="./assets/destinations/gisenyi.jpg"
+              alt=""
+              class="rounded-t-2xl"
+            />
             <p class="p-3">Gisenyi</p>
           </div>
 
-          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72">
-            <img src="./assets/destinations/kampala.jpg" alt="" class="rounded-t-2xl">
+          <div
+            class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72"
+          >
+            <img
+              src="./assets/destinations/kampala.jpg"
+              alt=""
+              class="rounded-t-2xl"
+            />
             <p class="p-3">Kampala</p>
           </div>
 
-          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72">
-            <img src="./assets/destinations/brussels.jpg" alt="" class="rounded-t-2xl">
+          <div
+            class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72"
+          >
+            <img
+              src="./assets/destinations/brussels.jpg"
+              alt=""
+              class="rounded-t-2xl"
+            />
             <p class="p-3">Brussels</p>
           </div>
 
-          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72">
-            <img src="./assets/destinations/daressalaam.jpg" alt="" class="rounded-t-2xl">
+          <div
+            class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72"
+          >
+            <img
+              src="./assets/destinations/daressalaam.jpg"
+              alt=""
+              class="rounded-t-2xl"
+            />
             <p class="p-3">Dar es Salaam</p>
           </div>
 
-          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72">
-            <img src="./assets/destinations/yaounde.jpg" alt="" class="rounded-t-2xl">
+          <div
+            class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72"
+          >
+            <img
+              src="./assets/destinations/yaounde.jpg"
+              alt=""
+              class="rounded-t-2xl"
+            />
             <p class="p-3">Yaounde</p>
           </div>
 
-          <div class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72">
-            <img src="./assets/destinations/douala.jpg" alt="" class="rounded-t-2xl">
+          <div
+            class="flex flex-col flex-none border border-gray-400 rounded-2xl w-72"
+          >
+            <img
+              src="./assets/destinations/douala.jpg"
+              alt=""
+              class="rounded-t-2xl"
+            />
             <p class="p-3">Douala</p>
           </div>
-
         </div>
       </section>
 
       <!-- Featured Accommodations -->
-      <section class="py-10 px-44">
+      <section class="px-6 py-10 md:px-6 lg:px-44">
+        <h1 class="text-3xl text-[#191e3b] font-semibold">
+          Find accommodations to suit your taste
+        </h1>
 
-        <h1 class="text-3xl text-[#191e3b] font-semibold">Find accommodations to suit your taste</h1>
-
-        <div class="flex flex-row w-full gap-4 py-4 overflow-x-auto flex-nowrap overscroll-x-scroll text-[16px] font-semibold no-scrollbar">
-  
-          <div class="relative flex flex-col flex-none border rounded-2xl w-60 h-80">
-            <img src="./assets/accomodations/holiday_home.jpg" alt="" class="w-full h-full rounded-2xl">
-            <p class="absolute font-semibold text-white bottom-2 left-3">holiday home</p>
+        <div
+          class="flex flex-row w-full gap-4 py-4 overflow-x-auto flex-nowrap overscroll-x-scroll text-[16px] font-semibold no-scrollbar"
+        >
+          <div
+            class="relative flex flex-col flex-none border rounded-2xl w-60 h-80"
+          >
+            <img
+              src="./assets/accomodations/holiday_home.jpg"
+              alt=""
+              class="w-full h-full rounded-2xl"
+            />
+            <p class="absolute font-semibold text-white bottom-2 left-3">
+              holiday home
+            </p>
           </div>
 
-          <div class="relative flex flex-col flex-none border rounded-2xl w-60 h-80">
-            <img src="./assets/accomodations/holiday_apartment.jpg" alt="" class="w-full h-full rounded-2xl">
-            <p class="absolute font-semibold text-white drop-shadow-lg bottom-2 left-3">holiday apartment</p>
+          <div
+            class="relative flex flex-col flex-none border rounded-2xl w-60 h-80"
+          >
+            <img
+              src="./assets/accomodations/holiday_apartment.jpg"
+              alt=""
+              class="w-full h-full rounded-2xl"
+            />
+            <p
+              class="absolute font-semibold text-white drop-shadow-lg bottom-2 left-3"
+            >
+              holiday apartment
+            </p>
           </div>
 
-          <div class="relative flex flex-col flex-none border rounded-2xl w-60 h-80">
-            <img src="./assets/accomodations/holiday_cottage.jpg" alt="" class="w-full h-full rounded-2xl">
-            <p class="absolute font-semibold text-white drop-shadow-lg bottom-2 left-3">holiday cottage</p>
+          <div
+            class="relative flex flex-col flex-none border rounded-2xl w-60 h-80"
+          >
+            <img
+              src="./assets/accomodations/holiday_cottage.jpg"
+              alt=""
+              class="w-full h-full rounded-2xl"
+            />
+            <p
+              class="absolute font-semibold text-white drop-shadow-lg bottom-2 left-3"
+            >
+              holiday cottage
+            </p>
           </div>
 
-          <div class="relative flex flex-col flex-none border rounded-2xl w-60 h-80">
-            <img src="./assets/accomodations/country_house.jpg" alt="" class="w-full h-full rounded-2xl">
-            <p class="absolute font-semibold text-white drop-shadow-lg bottom-2 left-3">country house</p>
+          <div
+            class="relative flex flex-col flex-none border rounded-2xl w-60 h-80"
+          >
+            <img
+              src="./assets/accomodations/country_house.jpg"
+              alt=""
+              class="w-full h-full rounded-2xl"
+            />
+            <p
+              class="absolute font-semibold text-white drop-shadow-lg bottom-2 left-3"
+            >
+              country house
+            </p>
           </div>
 
-          <div class="relative flex flex-col flex-none border rounded-2xl w-60 h-80">
-            <img src="./assets/accomodations/villa.jpg" alt="" class="w-full h-full rounded-2xl">
-            <p class="absolute font-semibold text-white drop-shadow-lg bottom-2 left-3">villa</p>
+          <div
+            class="relative flex flex-col flex-none border rounded-2xl w-60 h-80"
+          >
+            <img
+              src="./assets/accomodations/villa.jpg"
+              alt=""
+              class="w-full h-full rounded-2xl"
+            />
+            <p
+              class="absolute font-semibold text-white drop-shadow-lg bottom-2 left-3"
+            >
+              villa
+            </p>
           </div>
 
-          <div class="relative flex flex-col flex-none border rounded-2xl w-60 h-80">
-            <img src="./assets/accomodations/chalet.jpg" alt="" class="w-full h-full rounded-2xl">
-            <p class="absolute font-semibold text-white drop-shadow-lg bottom-2 left-3">chalet</p>
+          <div
+            class="relative flex flex-col flex-none border rounded-2xl w-60 h-80"
+          >
+            <img
+              src="./assets/accomodations/chalet.jpg"
+              alt=""
+              class="w-full h-full rounded-2xl"
+            />
+            <p
+              class="absolute font-semibold text-white drop-shadow-lg bottom-2 left-3"
+            >
+              chalet
+            </p>
           </div>
-
         </div>
       </section>
     </main>
